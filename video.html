@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.myVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+ color: #f82907;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+.btn{
+		color: #fec000;
+	background-color: #f82907;
+	border-color: black;
+	border: none;
+
+}
+	</style>
+	<title></title>
+</head>
+<body>
+ <video autoplay muted loop class="myVideo">
+  <source src="vid.mp4" type="video/mp4">
+</video>
+  Your browser does not support the video tag.
+</video> 
+<div class="content">
+<form name="contact" netlify>
+	<p>Daj mi swoje dane, Dynio!</p>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button class="btn" type="submit">Send</button>
+  </p>
+</form>
+</div>
+</body>
+</html>
